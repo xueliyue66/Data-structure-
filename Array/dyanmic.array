@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int size ;
+    int length;
+    int *A;
+
+    std::cout <<"enter the size of an array :" << std::endl;
+    std::cin>>size;
+    std::cout<<"enter how many elements :"<<std::endl;
+    std::cin>>length;
+    A=new int[length];
+    std::cout<<"enter elements: "<<std::endl;
+    for(int i=0;i<length;i++)
+    {
+        std::cin>>A[i];
+    }
+    std::cout<<"Array is :";
+    for(int i=0;i<length;i++)
+    {
+        std::cout<<" "<< A[i];
+    }
+
+    return 0;
+}
